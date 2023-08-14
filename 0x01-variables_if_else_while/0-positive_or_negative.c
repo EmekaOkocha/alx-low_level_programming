@@ -1,22 +1,26 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+/* more headers goes there */
 
-/* main - A program that prints the positive or negative random numbers */
+/* main - A program that prints the sign of n
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if(n > 0)
+	if (n > 0)
 	{
-		printf(n "is positive \n");
+		printf(n "is positive");
 	}
-	else if(n = 0)
-	{
-		printf(n "is 0 \n");
-	}
-	else (n "is negative \n");
+	if (n = 0)
+        {
+                printf(n "is zero");
+        }
+	else
+	       {	printf(n "is positive");
+	       }
 	return (0);
 }

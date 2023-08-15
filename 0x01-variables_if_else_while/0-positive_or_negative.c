@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-/** main - A program that prints the sign of n
+/* 
+ * main - A program that prints the sign of n
  * Return: 0
  */
 int main(void)
